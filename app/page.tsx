@@ -1,5 +1,6 @@
 import Calendar from "@/components/calendar";
 import EmailBadge from "@/components/email-badge";
+import SearchBadge from "@/components/search-badge";
 import SectionDivider from "@/components/section-divider";
 import StatsBadge from "@/components/stats-badge";
 import { DayTime, emails } from "@/lib/emails";
@@ -24,8 +25,8 @@ export default function Home() {
   };
 
   return (
-    <div className="h-screen w-screen px-6 py-8">
-      <div className="max-w-[144rem] mx-auto lg:px-[10rem] flex flex-col gap-y-4">
+    <div className="h-screen w-full">
+      <div className="max-w-[144rem] mx-auto lg:px-[10rem] flex flex-col gap-y-4 px-6 py-8">
         <div className="w-full flex items-center justify-between mx-auto">
           <div className="flex items-center gap-x-4 text-zinc-800">
             <h1 className="text-2xl font-semibold">today</h1>
@@ -67,6 +68,8 @@ export default function Home() {
           ))}
         </div>
       </div>
+
+      <SearchBadge />
     </div>
   );
 }
