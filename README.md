@@ -2,6 +2,8 @@
 
 The design of this project is a copy of a design created by [@heyXdave](https://twitter.com/heyXdave). Shout out to him for creating this design!
 
+[Preview](https://eemail.vercel.app) the app here.
+
 # 🚀 Quick start
 
 Install the dependencies:
